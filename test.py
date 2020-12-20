@@ -1,11 +1,11 @@
 import sys
-from pynq import Overlay 
-from comblock import Comblock
+sys.path.append('/home/xilinx/')
+from pynq import Overlay, comblock
 
 
 def main():
 
-    ov = Overlay("testOverlay/design_1.bit")
+    ov = Overlay("/home/xilinx/pynq/overlays/comblock/completo/design_1.bit")
     CB_L = ov.comblock.AXIL
     CB_F = ov.comblock.AXIF
 
