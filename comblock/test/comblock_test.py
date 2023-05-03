@@ -1,4 +1,5 @@
 import sys
+sys.path.append('/home/xilinx/')
 from pynq import Overlay 
 from comblock import Comblock
 
